@@ -29,10 +29,20 @@ function renderLicenseLink(license) {
   }
 }
 
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
+//Created a function that returns the license section of README
+//If there is no license, returns an empty string
 function renderLicenseSection(license) {
-  
+
+  const licenseBadge = renderLicenseBadge(license);
+  const licenseLink = renderLicenseLink(license);
+
+  if (licenseBadge && licenseLink) {
+    return `## License
+    This project is licensed under the ${license} license.  
+    For more information, please refer to the ${licenseLink}.`;
+  } else {
+    return '';
+  }
 }
 
 // TODO: Create a function to generate markdown for README
