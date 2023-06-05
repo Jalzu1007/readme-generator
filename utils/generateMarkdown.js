@@ -2,13 +2,13 @@
 //If there is no license, returns an empty string
 function renderLicenseBadge(license) {
   if (license === 'MIT') {
-    return `[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)]`;
+    return `![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)`;
   } else if (license === 'APACHE 2.0') {
-    return '[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)]';
+    return '![License: APACHE 2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)';
   } else if (license === 'GPL 3.0') {
-    return '[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)]';
+    return '![License: GPL 3.0](https://img.shields.io/badge/License-GPLv3-blue.svg)';
   } else if (license === 'BSD 3') {
-    return '[![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)]';
+    return '![License: BSD 3](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)';
   } else {
     return '';
   }
@@ -19,7 +19,7 @@ function renderLicenseLink(license) {
   if (license === 'MIT') {
     return '[MIT License](https://opensource.org/licenses/MIT)';
   } else if (license === 'Apache 2.0') {
-    return '[Apache 2.0 License](https://opensource.org/licenses/Apache-2.0)';
+    return '[APACHE 2.0 License](https://opensource.org/licenses/Apache-2.0)';
   } else if (license === 'GPL 3.0') {
     return '[GPL 3.0 License](https://www.gnu.org/licenses/gpl-3.0)';
   } else if (license === 'BSD 3') {
@@ -62,7 +62,7 @@ function generateMarkdown(data) {
   
   - [License](#license)
 
-  - [Contributing](#installation)
+  - [How to Contribute](#Contribute)
 
   - [Tests](#tests)
 
@@ -78,15 +78,15 @@ function generateMarkdown(data) {
 
     ${data.usage}
 
-  Screen-share video of the README Generator Application:
+  Screen-share video of the ${data.title} Application:
 
-    [![readme-generator]
+    [![${data.title}]
 
   ${renderLicenseSection(data.license)}
 
     ${data.license}
 
-  ## Contributing
+  ## How to Contribute
 
     ${data.contribute}
 

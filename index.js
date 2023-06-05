@@ -34,22 +34,22 @@ const questions = [
     {
         type: 'input',
         name: 'install',
-        message: 'What command should be run to install dependencies?',
+        message: 'What command should be used to install dependencies?',
     },
     {
         type: 'input',
         name: 'test',
-        message: 'What command should be run to run tests',
+        message: 'What command should be used to run tests',
     },
     {
         type: 'input',
         name: 'usage',
-        message: 'What does the user need to know about using the repo?'
+        message: 'What does the user need to know about using the repository?'
     },
     {
         type: 'input',
         name: 'contribute',
-        message: 'What does the user need to know about contributing to the repo?'
+        message: 'What does the user need to know about contributing to the repository?'
     },
 ];
 
