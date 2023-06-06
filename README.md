@@ -29,6 +29,10 @@
 
     To use this command-line application, navigate to the project directory and run node index.js. Answer a series of prompts about your project, including its title, description, installation, usage, contribution guidelines, and more. After providing the necessary information, the application will generate a professional README.md file tailored to your project. This file can be used to document your project on GitHub. Refer to the walkthrough video for a visual guide on how to use the application and view the generated README.
 
+  Screen-share video link of the readme-generator application:
+
+  [readme-generator](https://www.youtube.com/watch?v=xSXGZpiKwKw)
+
   ## License  
 
   This project is licensed under the MIT License.

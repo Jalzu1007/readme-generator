@@ -77,6 +77,10 @@ function generateMarkdown(data) {
 
     ${data.usage}
 
+  Screen-share video link of the ${data.title} application:
+
+  [${data.title}](https://www.youtube.com/watch?v=xSXGZpiKwKw)
+
   ## License  
 
   ${renderLicenseSection(data.license)}
