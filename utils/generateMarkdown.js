@@ -99,7 +99,7 @@ function generateMarkdown(data) {
 
   ## Questions
 
-    If you have any questions about the repository, open an issue or contact me directly at ${data.email}. You can find more of my projects at https://github.com/${data.username}`;
+  If you have any questions about the repository, open an issue or contact me directly at ${data.email}. You can find more of my projects at https://github.com/${data.username}`;
 }
 
 module.exports = generateMarkdown;
